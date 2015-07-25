@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Remote controller</title>
+  <script src="js/index.js"></script>
+  <style>
+    html, body {
+      height: 100%
+    }
+    * {
+      font-size: 1.4em;
+      box-sizing:border-box;
+    }
+    div {
+      text-align: center;
+      width: 25%;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column2 {
+      float: left;
+    }
+
+    #leftArrow, #rightArrow, #downArrow, #stop, #upArrow {
+      border: 5px solid black;
+      padding: 20px;
+    }
+
+    #leftArrow, #rightArrow, #downArrow {
+      display:inline-block;
+
+    }
+
+    #downArrow {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .center-horizontally {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 40px;
+      margin-top: 40px; 
+    }
+
+    main {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="center-horizontally">
+      <div id="upArrow" class="up">
+        <label >&#8593;</label>
+      </div>
+    </div>
+    <div class="center-horizontally">
+      <div id="leftArrow">
+        <label >&#8592;</label>
+      </div>
+
+      <div id="downArrow">
+        <label >&#8595;</label>
+      </div>
+
+      <div id="rightArrow">
+        <label >&#8594;</label>
+      </div>
+    </div>
+
+    <div class="center-horizontally">
+      <div id="stop">
+        <label>&#9632;</label>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
